@@ -112,7 +112,7 @@ my_data = user_input_features()
 st.write("Patient data:")
 st.dataframe(my_data)
 
-df = pd.read_csv('data/heart.csv')
+df = pd.read_csv('heart.csv')
 # df = pd.get_dummies(df, columns = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal'])
 
 X = df.drop(['target'], axis=1)
