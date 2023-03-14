@@ -67,7 +67,7 @@ def user_input_features():
     fbs = st.sidebar.selectbox('6- Fasting blood sugar',
             range(len(bool)), format_func=lambda x: bool[x])
 
-    res = st.sidebar.selectbox('7- Resting electrocardiographic results: ', ["0", "1", "2"],
+    restecg = st.sidebar.selectbox('7- Resting electrocardiographic results: ', ["0", "1", "2"],
         help="""
         0: normal;
         1: having ST-T wave abnormality;
@@ -96,7 +96,7 @@ def user_input_features():
         'trestbps': trestbps, 
         'chol': chol, 
         'fbs': fbs,
-        'restcg': res,
+        'restecg': restecg,
         'thalach': thalach, 
         'exang': exang, 
         'oldpeak': oldpeak, 
